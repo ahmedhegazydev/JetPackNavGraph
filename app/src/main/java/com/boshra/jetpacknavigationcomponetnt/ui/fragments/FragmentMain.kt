@@ -27,8 +27,11 @@ class FragmentMain : Fragment(), OnClickListener {
         super.onViewCreated(view, savedInstanceState)
 
         navigatController = Navigation.findNavController(view)
-        view.findViewById<Button>(R.id.btnLogin).setOnClickListener(this)
-        view.findViewById<Button>(R.id.btnRegister).setOnClickListener(this)
+
+        view.findViewById<Button>(R.id.btnLogin)
+            .setOnClickListener(this)
+        view.findViewById<Button>(R.id.btnRegister)
+            .setOnClickListener(this)
 
 
     }
